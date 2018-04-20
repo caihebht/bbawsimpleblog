@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "distribution",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "mydemodistribution",
+        "name": "My Distribution",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "bbaw",
+                "email": "hecai2222@hotmail.de",
+                "name": "Cai He",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Mybbaw"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-04-10 02:28",
+        "extension_builder_version": "7.6.18",
+        "be_user": " (1)"
+    }
+}

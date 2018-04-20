@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="content">
+        <div class="container-fluid">
+            <h1>Delete Blog?</h1>
+            Would you really like to delete the Blog with the title <strong>{blog.title}</strong>?
+            <br /><br />
+            <f:link.action action="list" class="btn btn-danger">No, don't delete!</f:link.action>
+            <f:link.action action="delete" class="btn btn-success" arguments="{blog:blog}">Yes, sure, delete i\
+                t!</f:link.action>
+        </div>
+</f:section>
+</html>

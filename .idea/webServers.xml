@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="626a5775-3d41-4432-a14a-78525cafcfc2" name="kvmwww4" url="http://kvmwww4/bbawtypo3praktik">
+        <fileTransfer host="kvmwww4" port="22" rootFolder="/srv/http/kvmwww4/html/bbawtypo3praktik/typo3conf/ext" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

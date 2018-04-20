@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/extension_builder/.Build/vendor/typo3/cms/typo3/sysext/core/Tests" isTestSource="true" packagePrefix="TYPO3\CMS\Core\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/extension_builder/Classes" isTestSource="false" packagePrefix="EBT\ExtensionBuilder\" />
+      <sourceFolder url="file://$MODULE_DIR$/extension_builder/Resources/Private/PHP/PHP-Parser/lib/PhpParser" isTestSource="false" packagePrefix="PhpParser\" />
+      <sourceFolder url="file://$MODULE_DIR$/extension_builder/Tests" isTestSource="true" packagePrefix="EBT\ExtensionBuilder\Tests\" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

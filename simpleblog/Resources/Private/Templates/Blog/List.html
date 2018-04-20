@@ -1,0 +1,63 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+
+	<div class="container-fluid">
+		<h4>Blog List</h4>
+
+		<f:form action="list" additionalAttributes="{role:'form'}">
+			<div class="form-inline">
+				<div class="form-group">
+					<f:form.textfield name="search" value="{search}" class="form-control" />
+					<f:form.submit value="Search!" class="btn-xs btn-primary" />
+				</div>
+			</div>
+		</f:form>
+
+		<ul class="list-group">
+			<f:for each="{blogs}"  as="blog">
+				<li class="list-group-item">{blog.title}
+					<f:link.action action="deleteConfirm" arguments="{blog:blog}" class="btn btn-primary
+					btn-xs pull-right margin-right ">
+						<span class="glyphicon glyphicon-trash" aria-hidden="true">
+						</span>
+						DELETE
+					</f:link.action>
+					<f:link.action action="updateForm" arguments="{blog:blog}" class="btn btn-primary
+					btn-xs pull-right margin-right">
+							<span class="glyphicon glyphicon-edit" aria-hidden="true">
+							</span>
+						EDIT
+					</f:link.action>
+					<f:link.action action="show" arguments="{blog:blog}" class="btn btn-primary
+					btn-xs pull-right margin-right">
+							<span class="glyphicon glyphicon-search" aria-hidden="true">
+							</span>
+						SHOW
+					</f:link.action>
+				</li>
+
+			</f:for>
+		</ul>
+		<p class="text-muted">Es werden maximal {settings.blog.max} Blogs ausgegeben.</p>
+
+		<f:link.action action="addForm" class="btn btn-primary">
+			<span class="glyphicon glyphicon-plus" aria-hidden="true">
+			</span>
+			Add Blogs</f:link.action>
+	</div>
+
+</f:section>
+</html>

@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace pw = Pluswerk\Simpleblog\ViewHelpers}
+<h1>{headline}</h1>
+<f:render partial="Error" arguments="{object:'blog'}" />
+<f:form action="{action}" object="{blog}" name="blog" additionalAttributes="{role:'form'}">
+    <div class="form-group">
+        <label>Blog title</label>
+        <f:form.textfield property="title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label> Blog description </label>
+        <f:form.textarea property="description" class="form-control" />
+    </div>
+    <f:form.submit value="{submitmessage}" class="btn btn-primary" />
+    <f:link.action action="list" class="btn btn-default">Cancel</f:link.action>
+</f:form>
+</html>

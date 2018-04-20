@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="DefaultLayout"/>
+<f:section name="Main">
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+
+            <f:if condition="{contentAside}">
+                <f:then>
+                    <article>
+                </f:then>
+                <f:else>
+                    <article class = "wide">
+                </f:else>
+            </f:if>
+
+              <f:format.raw>{contentMain}</f:format.raw>
+            </article>
+
+            <!-- condition= Bedienung  ==>  wenn es contentAside gibt dann wird zur <article>,
+            ansonsten  <article class = "wide"> und unter main.css kann man dann die class wide den Style aendern        -->
+
+
+            <f:format.raw>{contentAside}</f:format.raw>
+
+
+        </div> <!-- #main -->
+    </div> <!-- #main-container -->
+</f:section>
+</html>
