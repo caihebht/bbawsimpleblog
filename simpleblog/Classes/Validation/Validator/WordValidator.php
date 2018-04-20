@@ -3,7 +3,7 @@ namespace Pluswerk\Simpleblog\Validation\Validator;
 class WordValidator extends \TYPO3\CMS\Extbase\Validation\Validator\AbstractValidator
 {
     protected $supportedOptions = array(
-        'max' => array(3, 'Maximum word count for a valid string', 'integer'),
+        'max' => array(7, 'Maximum word count for a valid string', 'integer'),
     );
 
     public function isValid($property)
