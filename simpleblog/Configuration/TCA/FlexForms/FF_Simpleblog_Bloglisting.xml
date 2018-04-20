@@ -37,13 +37,15 @@
                                                                         Blog->deleteConfirm;Blog->delete;
                                                                         Blog->addForm; Blog->add;
                                                                         Blog->update; Blog->updateForm;
-
+                                                                        Post->addForm; Post->add; Post->show;
+                                                                        Post->updateForm; Post->update; Post->deleteConfirm; Post->delete;
                                                    </numIndex>
                                                </numIndex>
                                            </items>
                                        </config>
                                    </TCEforms>
                                </switchableControllerActions>
+
 
                 </el>
             </ROOT>
