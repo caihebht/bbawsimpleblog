@@ -29,6 +29,16 @@ plugin.tx_simpleblog_bloglisting {
       Pluswerk\Simpleblog\Domain\Model\Tag {
         newRecordStoragePid = 17
       }
+
+
+      Pluswerk\Simpleblog\Domain\Model\Author {
+        mapping {
+          tableName = fe_users
+          columns {
+            name.mapOnProperty = fullname
+          }
+        }
+      }
     }
   }
   settings{
