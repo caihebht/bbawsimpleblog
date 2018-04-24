@@ -110,3 +110,15 @@ page {
     bootstrap = EXT:simpleblog/Resources/Public/JavaScript/js/bootstrap.js
   }
 }
+
+ajax = PAGE
+ajax {
+  typeNum = 99
+  config {
+    disableAllHeaderCode = 1
+    additionalHeaders = Content-type:application/json
+    admPanel = 0
+    debug = 0
+  }
+  10 < tt_content.list.20.simpleblog_bloglisting
+}

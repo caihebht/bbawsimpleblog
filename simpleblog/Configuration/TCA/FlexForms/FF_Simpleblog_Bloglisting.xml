@@ -39,6 +39,7 @@
                                                                         Blog->update; Blog->updateForm;
                                                                         Post->addForm; Post->add; Post->show;
                                                                         Post->updateForm; Post->update; Post->deleteConfirm; Post->delete;
+                                                                        Post->ajax
                                                    </numIndex>
                                                </numIndex>
                                            </items>

@@ -10,12 +10,12 @@ call_user_func(
             'Bloglisting',
             [
                 'Blog' => 'list,addForm,add,show,updateForm,update,deleteConfirm,delete',
-                'Post' => 'addForm,add,show,updateForm,update,deleteConfirm,delete',
+                'Post' => 'addForm,add,show,updateForm,update,deleteConfirm,delete,ajax',
             ],
             // non-cacheable actions
             [
                 'Blog' => 'list,addForm,add,show,updateForm,update,deleteConfirm,delete',
-                'Post' => 'addForm,add,show,updateForm,update,deleteConfirm,delete',
+                'Post' => 'addForm,add,show,updateForm,update,deleteConfirm,delete,ajax',
             ]
         );
 
