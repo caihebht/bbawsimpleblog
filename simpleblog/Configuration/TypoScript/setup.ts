@@ -42,6 +42,7 @@ plugin.tx_simpleblog_bloglisting {
     }
   }
   settings{
+    loginpage = 20
     blog{
       max = 10
     }

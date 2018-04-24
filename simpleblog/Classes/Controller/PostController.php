@@ -20,6 +20,21 @@ class PostController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     }
 
 
+    /*
+     * Die initialzeAction wird vor jeder speziellen Action aufgerufen, daher können wir hier überprüfen, ob der User eingeloggt ist.
+     * das Array $GLOBALS['TSFE']->fe_user->user['uid'] - es ist immer dann gesetzt, wenn ein Webseiten-Benutzer eingeloggt ist.
+     */
+    public function initializeAction()
+    {
+        $action = $this->request->getControllerActionName();
+// pruefen, ob eine andere Action ausser "show" aufgerufen wurde
+        if ($action != 'show') {
+// Redirect zur Login Seite falls nicht eingeloggt
+            if (!$GLOBALS['TSFE']->fe_user->user['uid']) {
+                $this->redirect(NULL, NULL, NULL, NULL, $this->settings['loginpage']);
+            }
+        }
+    }
 
     /**
      * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
@@ -32,18 +47,18 @@ class PostController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $this->view->assign('blog',$blog);
         $this->view->assign('post',$post);
         $this->view->assign('tags',$this->objectManager->get('Pluswerk\\Simpleblog\\Domain\\Repository\\TagRepository')->findAll());
-        $this->view->assign('authors',$this>$this->objectManager->get('Pluswerk\\Simpleblog\\Domain\\Repository\\AuthorRepository')->findAll());
     }
 
     public function addAction(
         \Pluswerk\Simpleblog\Domain\Model\Blog $blog,
         \Pluswerk\Simpleblog\Domain\Model\Post $post)
     {
-
+        // wenn ein eingeloggt User was psotet wird sein Name auch da angezeigt
+       $post->setAuthor($this->objectManager->get('Pluswerk\\Simpleblog\\Domain\\Repository\\AuthorRepository')->findByUid( $GLOBALS['TSFE']->fe_user->user['uid']));
 //$this->postRepository->add($post);
         $blog->addPost($post);
         $this->objectManager->get('Pluswerk\\Simpleblog\\Domain\\Repository\\BlogRepository')->update($blog);
-$this->redirect('show','Blog',NULL,array('blog'=>$blog));
+        $this->redirect('show','Blog',NULL,array('blog'=>$blog));
     }
 
     /**
@@ -69,7 +84,6 @@ $this->redirect('show','Blog',NULL,array('blog'=>$blog));
         $this->view->assign('blog',$blog);
         $this->view->assign('post',$post);
         $this->view->assign('tags',$this->objectManager->get('Pluswerk\\Simpleblog\\Domain\\Repository\\TagRepository')->findAll());
-        $this->view->assign('authors',$this>$this->objectManager->get('Pluswerk\\Simpleblog\\Domain\\Repository\\AuthorRepository')->findAll());
     }
     /**
      * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
@@ -107,6 +121,8 @@ $this->redirect('show','Blog',NULL,array('blog'=>$blog));
         $this->postRepository->remove($post);
         $this->redirect('show','Blog',NULL,array('blog'=>$blog));
     }
+
+
 
 
 }
