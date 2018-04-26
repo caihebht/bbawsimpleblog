@@ -23,7 +23,7 @@ class BlogRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
         $query->matching(
             $query->logicalOr(
                 $query->logicalAnd(
-                    $query->like('title', '%'.$search.'%'),
+                    $query->like('title', '%' . $search . '%'),
                     $query->equals('description', '')
                 ),
                 $query->logicalAnd(
@@ -38,30 +38,28 @@ class BlogRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 
     /**
      * @param string $search
-     *  @param int $limit
+     * @param int $limit
      */
     public function findSearchForm($search, $limit)
     {
         $query = $this->createQuery();
         $query->matching(
-            $query->like('title','%'.$search.'%')
+            $query->like('title', '%' . $search . '%')
         );
         /*
          * sortieren und Limit setzen geht nicht
          */
+         $query->setOrderings(array('title' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING));
 
-      // $query->setOrderings(array('titel'=>\TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING));
-
-
-        $limit = (int)limit;
-         if($limit > 0){
-             $query->setLimit($limit);
-         }
+        $limit = (int)$limit;
+        if ($limit > 0) {
+            $query->setLimit($limit);
+        }
 
 
         return $query->execute();
     }
-
+}
 
 
 
@@ -80,4 +78,4 @@ class BlogRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 
 
 
-    }
+

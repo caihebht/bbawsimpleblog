@@ -1,5 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
+{namespace simpleblog=Pluswerk\Simpleblog\ViewHelpers}
 
 This Template is responsible for creating a table of domain objects.
 
@@ -15,7 +16,8 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <f:section name="content">
 
 	<div class="container-fluid">
-		<h4>Blog List</h4>
+		<h3><simpleblog:tsfe>page|title</simpleblog:tsfe></h3>
+		<simpleblog:dummyText length="400"> WOW </simpleblog:dummyText>
 
 		<f:form action="list" additionalAttributes="{role:'form'}">
 			<div class="form-inline">
@@ -27,29 +29,37 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		</f:form>
 
 		<ul class="list-group">
-			<f:for each="{blogs}"  as="blog">
-				<li class="list-group-item">{blog.title}
-					<f:link.action action="deleteConfirm" arguments="{blog:blog}" class="btn btn-primary
-					btn-xs pull-right margin-right ">
-						<span class="glyphicon glyphicon-trash" aria-hidden="true">
-						</span>
-						DELETE
-					</f:link.action>
-					<f:link.action action="updateForm" arguments="{blog:blog}" class="btn btn-primary
-					btn-xs pull-right margin-right">
-							<span class="glyphicon glyphicon-edit" aria-hidden="true">
-							</span>
-						EDIT
-					</f:link.action>
-					<f:link.action action="show" arguments="{blog:blog}" class="btn btn-primary
-					btn-xs pull-right margin-right">
-							<span class="glyphicon glyphicon-search" aria-hidden="true">
-							</span>
-						SHOW
-					</f:link.action>
-				</li>
+			<simpleblog:widget.AtoZNav objects="{blogs}" as="filteredBlogs" property="title">
+				<simpleblog:widget.sort objects="{blogs}" as="sortedBlogs" property="title">
 
-			</f:for>
+					<f:for each="{sortedBlogs}" as="blog">
+						<f:for each="{blogs}"  as="blog">
+							<li class="list-group-item">{blog.title}
+								<f:link.action action="deleteConfirm" arguments="{blog:blog}" class="btn btn-primary
+								btn-xs pull-right margin-right ">
+									<span class="glyphicon glyphicon-trash" aria-hidden="true">
+									</span>
+									DELETE
+								</f:link.action>
+								<f:link.action action="updateForm" arguments="{blog:blog}" class="btn btn-primary
+								btn-xs pull-right margin-right">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true">
+										</span>
+									EDIT
+								</f:link.action>
+								<f:link.action action="show" arguments="{blog:blog}" class="btn btn-primary
+								btn-xs pull-right margin-right">
+										<span class="glyphicon glyphicon-search" aria-hidden="true">
+										</span>
+									SHOW
+								</f:link.action>
+							</li>
+
+						</f:for>
+					</f:for>
+
+				</simpleblog:widget.sort>
+			</simpleblog:widget.AtoZNav>
 		</ul>
 		<p class="text-muted">Es werden maximal {settings.blog.max} Blogs ausgegeben.</p>
 

@@ -1,5 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
+{namespace simpleblog=Pluswerk\Simpleblog\ViewHelpers}
 <f:section name="content">
     <h1>Show Post</h1>
     <dl class="dl-horizontal">
@@ -17,7 +18,7 @@
 
         <dt>Post author:</dt>
         <dd>{post.author.fullname} (Email: {post.author.email})</dd>
-
+        <simpleblog:gravatar>{post.author.email}</simpleblog:gravatar></dd></dd>
     </dl>
     <h3>Comments</h3>
         <f:form action="ajax" name="comment" object="{comment}" arguments="{post:post}">
