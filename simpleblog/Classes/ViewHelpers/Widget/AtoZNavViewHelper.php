@@ -18,6 +18,7 @@ class AtoZNavViewHelper extends \TYPO3\CMS\Fluid\Core\Widget\AbstractWidgetViewH
         $as,
         $property)
     {
+
         return $this->initiateSubRequest();
     }
 }

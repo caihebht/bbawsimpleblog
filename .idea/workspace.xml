@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="862c296e-85b4-408d-8c99-bd1199315926" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/DummyTextViewHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/GravatarViewHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/IsFrontendViewHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/TsfeViewHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/AtoZNavViewHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/AtoZNavController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/SortController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/SortViewHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleblog/Resources/Private/Templates/ViewHelpers/Widget/AtoZNav/Index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleblog/Resources/Private/Templates/ViewHelpers/Widget/Sort/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/BlogRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/BlogRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleblog/Resources/Private/Partials/Blog/Form.html" beforeDir="false" afterPath="$PROJECT_DIR$/simpleblog/Resources/Private/Partials/Blog/Form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleblog/Resources/Private/Templates/Blog/List.html" beforeDir="false" afterPath="$PROJECT_DIR$/simpleblog/Resources/Private/Templates/Blog/List.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleblog/Resources/Private/Templates/Post/Show.html" beforeDir="false" afterPath="$PROJECT_DIR$/simpleblog/Resources/Private/Templates/Post/Show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/AtoZNavViewHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/AtoZNavViewHelper.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,38 +30,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="List.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleblog/Resources/Private/Templates/Blog/List.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AtoZNavViewHelper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/AtoZNavViewHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="357">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SortViewHelper.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/SortViewHelper.php">
+      <file leaf-file-name="AbstractWidgetViewHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/TYPO3/php/PHP_resource/typo3_src-7.6.20/typo3_src-7.6.20/typo3/sysext/fluid/Classes/Core/Widget/AbstractWidgetViewHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="467">
+              <caret line="178" column="6" selection-start-line="178" selection-start-column="6" selection-end-line="178" selection-end-column="6" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthorRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/AuthorRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/PostRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="48" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/BlogRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="669">
+              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="41" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Controller/BlogController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Start.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/efempty/Classes/Domain/Model/Start.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ext_emconf.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/efempty/ext_emconf.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+            <state relative-caret-position="289">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#135#212#0#PHP" />
                 <element signature="e#251#346#0#PHP" />
@@ -90,52 +117,7 @@
         <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/SortController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AtoZNavController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/AtoZNavController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleblog/Resources/Private/Templates/ViewHelpers/Widget/AtoZNav/Index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleblog/Resources/Private/Templates/ViewHelpers/Widget/Sort/Index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="91" lean-forward="true" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setup.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleblog/Configuration/TypoScript/setup.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Show.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleblog/Resources/Private/Templates/Post/Show.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -181,7 +163,6 @@
         <option value="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/HasErrorViewHelpers.php" />
         <option value="$PROJECT_DIR$/simpleblog/Classes/Domain/Model/Post.php" />
         <option value="$PROJECT_DIR$/simpleblog/Resources/Private/Templates/Blog/DeleteConfirm.html" />
-        <option value="$PROJECT_DIR$/simpleblog/Classes/Controller/BlogController.php" />
         <option value="$PROJECT_DIR$/simpleblog/Classes/Domain/Model/Blog.php" />
         <option value="$PROJECT_DIR$/simpleblog/Classes/Validation/Validator/WordValidator.php" />
         <option value="$PROJECT_DIR$/simpleblog/Configuration/TCA/Overrides/tt_content.php" />
@@ -211,10 +192,11 @@
         <option value="$PROJECT_DIR$/simpleblog/Configuration/TypoScript/setup.ts" />
         <option value="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/SortController.php" />
         <option value="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/SortViewHelper.php" />
-        <option value="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/AtoZNavViewHelper.php" />
         <option value="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/AtoZNavController.php" />
         <option value="$PROJECT_DIR$/simpleblog/Resources/Private/Templates/ViewHelpers/Widget/AtoZNav/Index.html" />
         <option value="$PROJECT_DIR$/simpleblog/Resources/Private/Templates/Blog/List.html" />
+        <option value="$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/AtoZNavViewHelper.php" />
+        <option value="$PROJECT_DIR$/simpleblog/Classes/Controller/BlogController.php" />
       </list>
     </option>
   </component>
@@ -256,136 +238,13 @@
             <path>
               <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="efempty" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="efempty" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ViewHelpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ViewHelpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Widget" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ViewHelpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Widget" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Configuration" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Configuration" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="TypoScript" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Private" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Private" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Private" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Private" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Private" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ViewHelpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Private" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ViewHelpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Widget" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Private" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ViewHelpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Widget" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AtoZNav" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bbaw-typo3test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbaw-typo3test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="simpleblog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Private" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ViewHelpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Widget" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Sort" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -468,12 +327,12 @@
       <workItem from="1524467342017" duration="22134000" />
       <workItem from="1524554051791" duration="23164000" />
       <workItem from="1524641042394" duration="20320000" />
-      <workItem from="1524727766399" duration="6478000" />
+      <workItem from="1524727766399" duration="8514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284199000" />
+    <option name="totallyTimeSpent" value="286235000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -485,7 +344,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3271028" />
@@ -495,9 +354,9 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32798165" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.4779951" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.42359412" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20476772" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.31662592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -524,20 +383,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Validation/Validator/WordValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Validation/Validator/AutocompleteValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/TYPO3/php/PHP_resource/typo3_src-7.6.20/typo3_src-7.6.20/typo3/sysext/extbase/Classes/Mvc/Controller/AbstractController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5253">
@@ -671,13 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Controller/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="94" column="45" lean-forward="true" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simpleblog/Resources/Private/Partials/Post/Form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -713,24 +551,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/BlogRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/TagRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/AuthorRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -745,13 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/PostRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="48" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -811,31 +628,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/TYPO3/php/PHP_resource/typo3_src-7.6.20/typo3_src-7.6.20/typo3/sysext/fluid/Classes/Core/Widget/AbstractWidgetViewHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="160" column="23" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/DummyTextViewHelper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/SortController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/AtoZNavController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -860,10 +656,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/AtoZNavController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/SortViewHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/Controller/SortController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/AtoZNavViewHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/TYPO3/php/PHP_resource/typo3_src-7.6.20/typo3_src-7.6.20/typo3/sysext/fluid/Classes/Core/Widget/AbstractWidgetViewHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="178" column="6" selection-start-line="178" selection-start-column="6" selection-end-line="178" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/AuthorRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/PostRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Domain/Repository/BlogRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Controller/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        <state relative-caret-position="289">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#135#212#0#PHP" />
             <element signature="e#251#346#0#PHP" />
@@ -873,19 +725,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/AtoZNavViewHelper.php">
+    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/Controller/BlogController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="136">
+          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleblog/Classes/ViewHelpers/Widget/SortViewHelper.php">
+    <entry file="file://$PROJECT_DIR$/efempty/Classes/Domain/Model/Start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="204">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/efempty/ext_emconf.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
