@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2018-04-13T10:09:15Z" product-name="simpleblog">
-		<header/>
-		<body>
+<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-01-03T09:15:12Z" product-name="simpleblog">
+<header/>
+<body>
 			<trans-unit id="tx_simpleblog_domain_model_bloglisting">
 				<source>Simpleblog - Bloglisting</source>
 			</trans-unit>
@@ -12,6 +12,7 @@
 			<trans-unit id="tx_simpleblog_domain_model_blog">
 			    <trans-unit id="blog.list.headline">
 				<source>Blog</source>
+				<target state="translated">Blog-Liste</target>
 				</trans-unit>
 			</trans-unit>
 			<trans-unit id="tx_simpleblog_domain_model_blog.title">
@@ -73,6 +74,7 @@
 			</trans-unit>
 			<trans-unit id="blog.list.button.search">
             <source>Search!</source>
+            <target state="translated">Suche!</target>
             </trans-unit>
 		</body>
 	</file>

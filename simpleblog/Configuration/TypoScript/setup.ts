@@ -122,3 +122,20 @@ ajax {
   }
   10 < tt_content.list.20.simpleblog_bloglisting
 }
+
+config.linkVars = L
+config.uniqueLinkVars = 1
+config {
+  sys_language_uid = 0
+  language = default
+  locale_all = en_US
+  htmlTag_langKey = en
+}
+[globalVar = GP:L = 1]
+  config {
+    sys_language_uid = 1
+    language = de
+    locale_all = de_DE.utf8
+    htmlTag_langKey = de
+  }
+[global]

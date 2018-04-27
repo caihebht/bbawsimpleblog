@@ -34,6 +34,8 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     $this->blogRepository = $blogRepository;
 }
 
+
+
     /**
      * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
      */
@@ -49,6 +51,10 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function addAction(\Pluswerk\Simpleblog\Domain\Model\Blog $blog)
 {
+    $this->addFlashMessage(
+        '" '.$blog->getTitle().' " created successfully!',
+        'Status',
+        \TYPO3\CMS\Core\Messaging\AbstractMessage::OK,TRUE);
     $this->blogRepository->add($blog);
     $this->redirect('list');
     //Die Methode $this->redirect() schließlich startet einen (komplett) neuen Request auf die Action list. Dies
