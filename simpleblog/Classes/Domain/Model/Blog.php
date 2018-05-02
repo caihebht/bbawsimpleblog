@@ -18,12 +18,34 @@ namespace Pluswerk\Simpleblog\Domain\Model;
 class Blog extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
+     * crdate
+     * @var DateTime
+     */
+    protected $crdate = null;
+    /**
      * title
      *
      * @var string
      * @validate NotEmpty, Text, Pluswerk.Simpleblog:WordValidator(max=7)
      */
     protected $title = '';
+
+    /**
+     * @return \DateTime
+     */
+    public function getCrdate()
+    {
+        return $this->crdate;
+    }
+
+    /**
+     * @param \DateTime $crdate
+     * @return void
+     */
+    public function setCrdate($crdate)
+    {
+        $this->crdate = $crdate;
+    }
 
     /**
      * description

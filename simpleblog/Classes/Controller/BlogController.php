@@ -118,4 +118,11 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     $this->view->assign('search',$search);
 
     }
+    /**
+     * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
+     */
+
+    public function rssAction(\Pluswerk\Simpleblog\Domain\Model\Blog $blog){
+        $this->view->assign('blog',$blog);
+    }
 }

@@ -103,6 +103,9 @@ page {
   includeCSS {
     bootstrap = EXT:simpleblog/Resources/Public/Css/Bootstrap/css/bootstrap.css
     simpleblog = EXT:simpleblog/Resources/Public/Css/simpleblog.css
+    fontawesome = https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
+    fontawesome.external = 1
+
   }
   includeJSLibs {
     jquery = //code.jquery.com/jquery.js
@@ -139,3 +142,33 @@ config {
     htmlTag_langKey = de
   }
 [global]
+
+// Rss Web Feed
+
+rss = PAGE
+rss {
+  typeNum = 100
+  10 = USER
+  10 {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = Simpleblog
+    pluginName = Bloglisting
+    vendorName = Pluswerk
+    controller = Blog
+    action = rss
+    switchableControllerActions {
+      Blog {
+        1 = rss
+      }
+    }
+    settings =< plugin.tx_simpleblog_bloglisting.settings
+    persistence =< plugin.tx_simpleblog_bloglisting.persistence
+    view =< plugin.tx_simpleblog_bloglisting.view
+  }
+  config {
+    disableAllHeaderCode = 1
+    additionalHeaders = Content-type:application/xml
+    debug = 0
+    admPanel = 0
+  }
+}

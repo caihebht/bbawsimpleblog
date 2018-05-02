@@ -4,7 +4,14 @@ return [
         'title'	=> 'LLL:EXT:simpleblog/Resources/Private/Language/locallang_db.xlf:tx_simpleblog_domain_model_blog',
         'label' => 'title',
         'tstamp' => 'tstamp',
-        'crdate' => 'crdate',
+        'crdate' => Array (
+            'exclude' => 0,
+            'label' => 'Creation date',
+            'config' => Array (
+                'type' => 'none',
+                'format' => 'date',
+                'eval' => 'date',
+            )),
         'cruser_id' => 'cruser_id',
 		'versioningWS' => true,
         'languageField' => 'sys_language_uid',

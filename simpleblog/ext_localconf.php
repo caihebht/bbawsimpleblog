@@ -9,12 +9,12 @@ call_user_func(
             'Pluswerk.Simpleblog',
             'Bloglisting',
             [
-                'Blog' => 'list,addForm,add,show,updateForm,update,deleteConfirm,delete',
+                'Blog' => 'list,addForm,add,show,updateForm,update,deleteConfirm,delete,rss',
                 'Post' => 'addForm,add,show,updateForm,update,deleteConfirm,delete,ajax',
             ],
             // non-cacheable actions
             [
-                'Blog' => 'list,addForm,add,show,updateForm,update,deleteConfirm,delete',
+                'Blog' => 'list,addForm,add,show,updateForm,update,deleteConfirm,delete,rss',
                 'Post' => 'addForm,add,show,updateForm,update,deleteConfirm,delete,ajax',
             ]
         );

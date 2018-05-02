@@ -8,6 +8,8 @@
             <dd>{blog.title}</dd>
             <dt>Blog description:</dt>
             <dd>{blog.description}</dd>
+            <f:link.action action="rss" format="xml" pageType="100" arguments="{blog:blog}" class="btn btn-smallbtn-warning"><i class="fa fa-rss"></i></f:link.action><br /><br />
+
         </dl>
         <f:if condition="{blog.posts}">
             <ul class="list-group">
