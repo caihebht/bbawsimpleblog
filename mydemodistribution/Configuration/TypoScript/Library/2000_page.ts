@@ -1,11 +1,6 @@
 # Default PAGE object:
     page = PAGE
 
-## CSS Dateien laden xxx
-page.includeCSS {
-    normalize = {$resDir}/Public/Css/normalize.min.css
-    main= {$resDir}/Public/Css/main.css
-}
 
 
 ## JavaScript laden
@@ -26,6 +21,11 @@ page.includeJSFooter{
 
 }
 
+## CSS Dateien laden xxx
+page.includeCSS {
+    normalize = {$resDir}/Public/Css/normalize.min.css
+    main= {$resDir}/Public/Css/main.css
+}
 
 
 page.10 = FLUIDTEMPLATE

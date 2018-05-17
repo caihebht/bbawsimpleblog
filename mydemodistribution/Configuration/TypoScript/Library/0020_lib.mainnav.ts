@@ -2,17 +2,22 @@
 
 lib.mainnav = HMENU
 lib.mainnav{
-    wrap = <ul>|</ul>
+    special = directory
+    special.value = 2
+
 
     1 = TMENU
     1{
+        wrap = <ul class="nav navbar-nav">|</ul>
         NO = 1
-        NO.allWrap =<li>|</li>
+        NO.wrapItemAndSub  = <li>|</li>
         NO.stdWrap.htmlSpecialChars = 1
 
-        CUR = 1
-        CUR.allWrap = <li class="cur">|</li>
-        CUR.stdWrap.htmlSpecialChars = 1
+
+        ACT <.NO
+        ACT.wrapItemAndSub  = <li class="active">|</li>
+
 
     }
+
 }

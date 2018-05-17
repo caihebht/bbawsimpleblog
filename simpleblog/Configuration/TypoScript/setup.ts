@@ -107,7 +107,7 @@ page {
     fontawesome.external = 1
 
   }
-  includeJSLibs {
+  includeJSFooterlibs{
     jquery = //code.jquery.com/jquery.js
     jquery.external = 1
     bootstrap = EXT:simpleblog/Resources/Public/JavaScript/js/bootstrap.js

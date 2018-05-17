@@ -69,19 +69,14 @@ body {
     ALL: Orange Theme
    =================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
 
-.footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #000000;
 }
 
 .header-container,
-.footer-container,
 .main aside {
-    background: #f16529;
+    background: #737373;
 }
 
 .title {
@@ -113,16 +108,12 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
-}
 
 nav a:hover {
-    text-decoration: underline;
+    color: #333;
+    background-color: transparent;
 }
 
 /* ==============
@@ -171,18 +162,6 @@ article.wide{
     width : 80% !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -195,7 +174,6 @@ article.wide{
 
     nav a {
         float: left;
-        width: 27%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
@@ -386,3 +364,32 @@ article.wide{
         page-break-after: avoid;
     }
 }
+
+/* 15.05.18
+ */
+
+h3 a {
+    font-size: 15px;
+    color: #777;
+    padding-left: 10px;
+
+}
+h3 a:hover{
+    color: white;
+    text-decoration: none;
+}
+h5 a{
+    color: white;
+    padding-top: 10px!important;
+}
+
+.navbar-toggle{
+    margin-top: -5px !important;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+
+
