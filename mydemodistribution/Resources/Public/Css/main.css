@@ -71,7 +71,7 @@ body {
 
 
 .main aside {
-    border-top: 20px solid #000000;
+    border-top: 20px solid yellow;
 }
 
 .header-container,
@@ -368,15 +368,16 @@ article.wide{
 /* 15.05.18
  */
 
-h3 a {
+.navbar-fixed-bottom .navbar h3 a {
     font-size: 15px;
     color: #777;
     padding-left: 10px;
+    padding-bottom: 30px !important;
 
 }
-h3 a:hover{
-    color: white;
-    text-decoration: none;
+h3 a .brand :hover,h3 a .brand :focus{
+    color: #737373;
+    text-decoration: none !important;
 }
 h5 a{
     color: white;
@@ -384,10 +385,39 @@ h5 a{
 }
 
 .navbar-toggle{
-    margin-top: -5px !important;
+    margin-top: 10px !important;
 }
 
 .navbar {
+    margin-bottom: 0px !important;
+}
+.dropdown-menu > .active > a{
+    background-color: grey !important;
+}
+
+.navbar-nav{
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav{
+        padding-top: 0px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-nav{
+        padding-bottom: 0px !important;
+    }
+}
+
+
+
+.breadcrumb {
+    border-top: solid transparent;
+    border-width: 0.5px;
+    border-color: lightgrey;
+    padding: 8px 8px;
     margin-bottom: 0px !important;
 }
 

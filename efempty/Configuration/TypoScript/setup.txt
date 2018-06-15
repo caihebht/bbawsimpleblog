@@ -1,0 +1,15 @@
+page.20 = TEXT
+page.20.value = HELLO WORLD!
+
+page.11 = TEXT
+[usergroup = 1]
+    page.11.value = du kannst es lesen
+    [else]
+    page.11.value = du hast leider keine Berechtigung das zu lesen
+[end]
+
+page {
+    23 = TEXT
+    23.value = Hello World!
+    24 < .23
+}

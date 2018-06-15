@@ -1,4 +1,6 @@
 config {
+    #laden der Conditional Comments für ältere Internet Explorer
+    pageRendererTemplateFile ={resDir}/Private/Templates/PageRenderer.html
 /*
     absRefPrefix = /
 

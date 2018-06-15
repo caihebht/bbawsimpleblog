@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="content">
+    <div class="container-fluid">
+        <h1>Produkte löschen</h1>
+        ind Sie sicher,dass{product.name} Sie löschen möchten?
+        <br /><br />
+        <f:link.action action="list" class="btn btn-danger">No, don't delete!</f:link.action>
+        <f:link.action action="delete" class="btn btn-success" arguments="{product:product}">Yes, sure, delete it!</f:link.action>
+    </div>
+</f:section>
+</html>

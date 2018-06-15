@@ -1,0 +1,21 @@
+<h1>Lagerbestände</h1>
+
+<table class="table table-striped">
+	<tr>
+		<th>Produktbezeichnung</th>
+		<th>Produktbeschreibung</th>
+		<th>Lagerbestand</th>
+	</tr>
+
+	<f:for each="{products}" as="product">
+		<tr>
+			<td>{product.name}</td>
+			<td>{product.description -> f:format.crop(maxCharacters: 100)}</td>
+			<td>{product.quantity}</td>
+			<td><f:link.action action="deleteConfirm" class="btn btn-warning">Produkt löschen</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="addForm" class="btn btn-primary">neue Produkt hinfügen
+</f:link.action>

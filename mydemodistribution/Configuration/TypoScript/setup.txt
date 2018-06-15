@@ -1,6 +1,9 @@
+#Debugging
+config.contentObjectExceptionHandler = 0
+/* Statische css_styled_cotent einbinden =>  diese content wird gleich bei der Installation von Distribution mit eingebunden
+    ohne dass man noch in( Modul Template->Includes hinfügen müssen)
+*/
+
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/setup.txt">
 
-
 <INCLUDE_TYPOSCRIPT: source ="DIR: ./Library" extensions="ts">
-
-

@@ -125,7 +125,19 @@ ajax {
   }
   10 < tt_content.list.20.simpleblog_bloglisting
 }
+/*
+  Sprache Konfiguration
+• linkVars sorgt dafür, dass der Sprachparameter L an alle intern erzeugten Links angehängt wird, wenn
+er einmal gesetzt wurde.
+• Nun wird die Default-Sprache so konfiguriert, dass sie der englischen Sprache entspricht.
+• Wenn nun der Sprachparameter auf den Wert 1 gesetzt wird (indem man beispielsweise &L=1 an die URL
+hängt), konfiguriert die entsprechende Condition das Sprachhandling so um, dass dies der deutschen
+Sprache entspricht.
 
+ACHTUNG man soll in Url der Startseite (bzw dawo überall Seit ID gibt) &L= 1 einsetzten damit Deutsch sprache geladen wird
+BSP http://kvmwww4/bbawtypo3praktik/index.php?id=11&L=1
+
+*/
 config.linkVars = L
 config.uniqueLinkVars = 1
 config {
@@ -133,6 +145,7 @@ config {
   language = default
   locale_all = en_US
   htmlTag_langKey = en
+  htmlTag_setParams = lang="en" dir="ltr" class="no-js"
 }
 [globalVar = GP:L = 1]
   config {
@@ -140,8 +153,12 @@ config {
     language = de
     locale_all = de_DE.utf8
     htmlTag_langKey = de
+    htmlTag_setParams = lang="de" dir="ltr" class="no-js"
   }
 [global]
+
+
+
 
 // Rss Web Feed
 

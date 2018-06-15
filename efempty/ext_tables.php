@@ -3,10 +3,15 @@ if (!defined('TYPO3_MODE')) {
     die ('Access denied.');
 }
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'Pluswerk.' .$_EXTKEY,
-    'Showcase',
-    'Empty Extbase/Fluid Container'
+
+call_user_func(
+    function ($extKey){
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript', 'test exsample');
+
+    },
+    $_EXTKEY
+
+
 );
 
 ?>

@@ -13,7 +13,9 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
+
 <f:section name="content">
+
 
 	<div class="container-fluid">
 		<h3><f:translate id="blog.list.headline" /></h3>
@@ -32,7 +34,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<div class="form-inline">
 				<div class="form-group">
 					<f:form.textfield name="search" value="{search}" class="form-control" />
-					<f:form.submit value="Search!" class="btn-xs btn-primary" />
+					<f:form.submit value="<f:translate id='blog.list.button.search' />" class="btn-xs btn-primary" />
 				</div>
 			</div>
 		</f:form>
@@ -46,19 +48,19 @@ Otherwise your changes will be overwritten the next time you save the extension 
 									btn-xs pull-right margin-right ">
 										<span class="glyphicon glyphicon-trash" aria-hidden="true">
 										</span>
-										DELETE
+										<f:translate id="blog.list.delete"/>
 									</f:link.action>
 									<f:link.action action="updateForm" arguments="{blog:blog}" class="btn btn-primary
 									btn-xs pull-right margin-right">
 											<span class="glyphicon glyphicon-edit" aria-hidden="true">
 											</span>
-										EDIT
+										<f:translate id="blog.list.edit"/>
 									</f:link.action>
 									<f:link.action action="show" arguments="{blog:blog}" class="btn btn-primary
 									btn-xs pull-right margin-right">
 											<span class="glyphicon glyphicon-search" aria-hidden="true">
 											</span>
-										SHOW
+										<f:translate id="blog.list.show"/>
 									</f:link.action>
 								</li>
 
@@ -69,8 +71,10 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		<f:link.action action="addForm" class="btn btn-primary">
 			<span class="glyphicon glyphicon-plus" aria-hidden="true">
 			</span>
-			Add Blogs</f:link.action>
+			<f:translate id="blog.list.addblogs"/>
+		</f:link.action>
 	</div>
+	<f:debug>{all}</f:debug>
 
 </f:section>
 </html>
