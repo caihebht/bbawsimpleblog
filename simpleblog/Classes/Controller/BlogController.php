@@ -1,5 +1,6 @@
 <?php
 namespace Pluswerk\Simpleblog\Controller;
+
 /***
  *
  * This file is part of the "Simple Blog Extension" Extension for TYPO3 CMS.
@@ -10,6 +11,7 @@ namespace Pluswerk\Simpleblog\Controller;
  *  (c) 2018 Cai He <heica2222@hotmail.de>, bbaw
  *
  ***/
+
 /**
  * BlogController
  */
@@ -22,13 +24,18 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @inject
      */
     protected $blogRepository = null;
+
     /**
      * @param \Pluswerk\Simpleblog\Domain\Repository\BlogRepository $blogRepository
      */
+
     public function injectBlogRepository(\Pluswerk\Simpleblog\Domain\Repository\BlogRepository $blogRepository)
-    {
-        $this->blogRepository = $blogRepository;
-    }
+{
+    $this->blogRepository = $blogRepository;
+}
+
+
+
     /**
      * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
      */
@@ -36,8 +43,6 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     {
         $this->view->assign('blog',$blog);
     }
-
-
     /*
      * @param string $actionName Name of the action to forward to
      * add action - add a blog to the repository
@@ -45,19 +50,12 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @validate $blog \Pluswerk.Simpleblog:AutocompleteValidator(property=titel)
      */
     public function addAction(\Pluswerk\Simpleblog\Domain\Model\Blog $blog)
-    {
-
-        $this->addFlashMessage(
-            '" '.$blog->getTitle().' " created successfully!',
-            'Status',
-            \TYPO3\CMS\Core\Messaging\AbstractMessage::OK,TRUE);
-
-        $this->blogRepository->add($blog);
-        $this->redirect('list');
-        //Die Methode $this->redirect() schließlich startet einen (komplett) neuen Request auf die Action list. Dies
-        //ist ein HTTP-Request, das heißt die Seite lädt komplett neu und ändert dabei auch die URL.
-    }
-
+{
+    $this->blogRepository->add($blog);
+    $this->redirect('list');
+    //Die Methode $this->redirect() schließlich startet einen (komplett) neuen Request auf die Action list. Dies
+    //ist ein HTTP-Request, das heißt die Seite lädt komplett neu und ändert dabei auch die URL.
+}
 
     /**
      * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
@@ -66,6 +64,7 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     {
         $this->view->assign('blog',$blog);
     }
+
     /**
      * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
      */
@@ -81,6 +80,7 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $this->blogRepository->update($blog);
         $this->redirect('list');
     }
+
     /**
      * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
      */
@@ -88,6 +88,7 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     {
         $this->view->assign('blog',$blog);
     }
+
     /**
      * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
      */
@@ -102,17 +103,21 @@ class BlogController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @return void
      */
     public function listAction()
-    {
-        if($this->request->hasArgument('search')){
-            $search = $this->request->getArgument('search');
-        }
-        $limit = ($this->settings['blog']['max']) ?: NULL;
-        $this->view->assign('blogs', $this->blogRepository->findSearchForm($search,$limit));
-        $this->view->assign('search',$search);
+{
+    if($this->request->hasArgument('search')){
+        $search = $this->request->getArgument('search');
+    }
+
+    $limit = ($this->settings['blog']['max']) ?: NULL;
+
+    $this->view->assign('blogs', $this->blogRepository->findSearchForm($search,$limit));
+    $this->view->assign('search',$search);
+
     }
     /**
      * @param \Pluswerk\Simpleblog\Domain\Model\Blog $blog
      */
+
     public function rssAction(\Pluswerk\Simpleblog\Domain\Model\Blog $blog){
         $this->view->assign('blog',$blog);
     }
