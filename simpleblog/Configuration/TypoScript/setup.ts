@@ -13,9 +13,9 @@ plugin.tx_simpleblog_bloglisting {
   }
   persistence {
     storagePid = {$plugin.tx_simpleblog_bloglisting.persistence.storagePid}
-    # storagePid = 0,13,15,16,17
-    storagePid = 12
-    recursive = 1
+     storagePid = 0,13,15,16,17,18
+    #storagePid = 12
+    #recursive = 1
     classes {
       Pluswerk\Simpleblog\Domain\Model\Blog {
         newRecordStoragePid = 13

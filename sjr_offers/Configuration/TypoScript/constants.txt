@@ -8,7 +8,18 @@ plugin.tx_sjroffers {
 		layoutRootPath = EXT:sjr_offers/Resources/Private/Layouts/
 	}
 	persistence {
-		 # cat=plugin.tx_sjroffers//a; type=int+; label=Default storage PID
-		storagePid = 
+
+		# cat=plugin.tx_sjroffers//a; type=int+; label=Default storage PID
+		storagePid = 29
+		recursive = 1
+		classes {
+			Sjr\SjrOffers\Domain\Model\Offer {
+				newRecordStoragePid = 30
+			}
+			Sjr\SjrOffers\Domain\Model\Organization {
+				newRecordStoragePid = 31
+			}
+
+		}
 	}
 }
