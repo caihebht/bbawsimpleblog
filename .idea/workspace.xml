@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="862c296e-85b4-408d-8c99-bd1199315926" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tut_produktdatenbank/ext_emconf.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tut_produktdatenbank/ext_localconf.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tut_produktdatenbank/ext_tables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tut_produktdatenbank/ext_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/Classes/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/Classes/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleblog/Configuration/TypoScript/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/simpleblog/Configuration/TypoScript/setup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sjr_offers/Configuration/TypoScript/constants.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sjr_offers/Configuration/TypoScript/constants.txt" afterDir="false" />
-    </list>
+    <list default="true" id="862c296e-85b4-408d-8c99-bd1199315926" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -274,19 +265,19 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\mydemodistribution\Resources\Private\Templates" />
-      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\simpleblog\Resources\Private\Templates\ViewHelpers\Widget" />
-      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\simpleblog\Classes\ViewHelpers\Widget\Controller" />
-      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\simpleblog\Classes\ViewHelpers\Widget" />
-      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\simpleblog\Classes\ViewHelpers\Widget\Sort\Controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test" />
       <recent name="C:\Users\che\PhpstormProjects" />
       <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\mydemodistribution\Resources\Public\Image" />
       <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\mydemodistribution\Resources\Private\Layouts" />
       <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\mydemodistribution\Resources\Private\Templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\tut_produktdatenbank\Resources" />
+      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\mydemodistribution\Resources\Private\Templates" />
+      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\simpleblog\Resources\Private\Templates\ViewHelpers\Widget" />
+      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\simpleblog\Classes\ViewHelpers\Widget\Controller" />
+      <recent name="C:\Users\che\PhpstormProjects\bbaw-typo3test\simpleblog\Classes\ViewHelpers\Widget" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -380,12 +371,12 @@
       <workItem from="1529489412620" duration="94000" />
       <workItem from="1529658819000" duration="632000" />
       <workItem from="1529915033438" duration="2480000" />
-      <workItem from="1530004803265" duration="260000" />
+      <workItem from="1530004803265" duration="557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="579444000" />
+    <option name="totallyTimeSpent" value="579741000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
