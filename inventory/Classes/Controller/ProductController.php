@@ -83,8 +83,12 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
         $this->redirect('list');
     }
 
+    /**
+     * @param \OReilly\Inventory\Domain\Model\Product $product
+     */
     public function deleteConfirmAction(\OReilly\Inventory\Domain\Model\Product $product){
         $this->view->assign('product', $product);
+
     }
 
 
